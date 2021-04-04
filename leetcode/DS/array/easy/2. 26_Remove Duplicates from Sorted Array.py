@@ -7,9 +7,6 @@ def method2(nums):      # best sol for SC only
     size = len(nums)
     i=1
     while i < size:
-        # print(i-1,nums[i-1])
-        # print("nums",nums)
-        # print("size",size)
         if nums[i-1] == nums[i]:
             del[nums[i-1]]
             size-=1
@@ -17,42 +14,17 @@ def method2(nums):      # best sol for SC only
         i+=1
     return size
 
-'''
-def method3(nums):
-    cache = []
-    j=0
-    cache += [nums[+j]]
-    print("cache",cache)
-    size = len(nums)
-    i=1
-    while i < size:
-        # print(i-1,nums[i-1])
-        # print("nums",nums)
-        # print("size",size)
-        if nums[i] == cache[j]:
-            del[nums[i-1]]
-            size-=1
-            i-=1
-            j+=1
-        i+=1
-    return len(nums)
-'''
 
 def method4(nums):      # best sol for both TC & SC
     size = len(nums)
     i=1
     j=1
     while i < size:
-        # print("nums",nums)
-        # print("i:",i,"j:",j)
-        # print("size",size)
         if nums[i-1] != nums[i]:
             nums[j] = nums[i]
             j+=1
         i+=1
 
-    # print("after loop\nnums",nums)
-    # print("i:",i,"j:",j,"size:",size)
     return j
 
 
@@ -61,16 +33,12 @@ def method5(nums):      # method4 using for loop
     j=1
     for i in range(size-1):
         if i < size:
-            # print("nums",nums)
-            # print("i:",i,"j:",j)
-            # print("size",size)
             if nums[i] != nums[i+1]:
                 nums[j] = nums[i+1]
                 j+=1
 
-    # print("after loop\nnums",nums)
-    # print("i:",i,"j:",j,"size:",size)
     return j
+
 
 
 nums1 = [0,0,1,1,1,2,2,3,3,4]

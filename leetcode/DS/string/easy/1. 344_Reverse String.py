@@ -18,7 +18,6 @@ def method2(s: list) -> None:
         l+=1
         r-=1
 
-    # print(s)
     return s
 
 

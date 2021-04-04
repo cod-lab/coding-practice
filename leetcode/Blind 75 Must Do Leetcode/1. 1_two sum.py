@@ -9,20 +9,15 @@ def method1(nums, target):
 
 
 def method2(nums, target):
-	# cache = [[],[]]
 	cache2 = {}
 	for i in range(len(nums)):
-		# cache += [[i],[target - nums[i]]]\
-		# if (nums[i] <= target) or (nums[i] in cache2):
 		if nums[i] in cache2:
-			print(cache2)
 			return[cache2[nums[i]],i]
 		cache2[target - nums[i]] = i
 
 
 
 # nums = [-3,4,3,90]
-# target = 0
 nums = [3,2,4]
 target = 6
 # nums = [11,3,2,15,5,7,4]

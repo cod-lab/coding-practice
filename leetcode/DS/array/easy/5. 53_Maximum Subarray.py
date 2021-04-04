@@ -3,14 +3,7 @@ def method1(nums):        # using kadane's algo (Dynamic Programming)
 
     old = nums[0]
     current = nums[0]
-
-    # for i in range(1,len(nums)):
-    #     print(i,nums[i])
-    #     current = max(nums[i], current + nums[i])
-    #     old = max(old, current)
-
     for x in nums[1:]:
-        # print(x)
         current = max(x, current + x)
         old = max(old, current)
 
@@ -21,25 +14,12 @@ def method2(nums):          # less efficient, using kadane's algo (Dynamic Progr
     size = len(nums)
     if size == 1: return nums[0]
 
-    # dp = size * ['''#''']
-    # print(dp)
     dp = []
-
     dp += [nums[0]]
-    # print(dp)
-    
-    # for i in range(1,size):
-    #     print(dp[i-1])
-    #     dp += [nums[i] + max(0, dp[i-1])]
-
     for x in nums[1:]:
-        # print(dp)
         dp += [x + max(0, dp[-1])]
     
-    # print(dp)
-    
     return max(dp)
-
 
 
 nums = [-2, -3, 4, -1, -2, 1, 5, -3]

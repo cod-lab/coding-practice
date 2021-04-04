@@ -6,27 +6,19 @@ def method1(nums,t):        # using recursion, so only TC is efficient
         for i in range(len(nums)-1,-1,-1):
             if nums[i] == t: return i
             if nums[i] < t: return i+1
-            # print("i:",i,"len(nums)-i-1:",len(nums)-i-1)
 
-    #else:
     if t == 0: return 0
 
-    # print("\n1:",nums)
-
     if len(nums) > t:
-        # print(nums[t])
         if nums[t] == t: return t
         nums = nums[:t]
-    # print("\n2:",nums)
 
     if nums[-1] == t: return len(nums)-1
-    # print("len(nums)-1:",len(nums)-1,"\tt:",t)
 
     if nums[-1] < t: return len(nums)
 
     y=0
     y = method1(nums[:len(nums)-1],t)
-    # print("\n3:",nums,"y:",y)
     return y
 
 
@@ -38,32 +30,20 @@ def method2(nums,t):        # using loop, so both TC & SC are efficient
         for i in range(len(nums)-1,-1,-1):
             if nums[i] == t: return i
             if nums[i] < t: return i+1
-            print("i:",i,"len(nums)-i-1:",len(nums)-i-1)
     
     if t == 0: return 0
     
-    # print("\n1:",nums)
-
     if len(nums) > t:
-        # print(nums[t])
         if nums[t] == t: return t
         nums = nums[:t]
-    # print("\n2:",nums)
 
     for i in range(len(nums)-1,-1,-1):
         if nums[i] == t: return i
         if nums[i] < t: return i+1
-        print("i:",i,"len(nums)-i-1:",len(nums)-i-1)
+
 
 
 def binary_search(nums,size,t):
-    # if nums[0] > -1:
-    #     if t == 0: return 0
-    #     if size > t:
-    #         if nums[t] == t: return t
-    #         nums = nums[:t]
-
-    # size = len(nums)
     i=0
     while i <= size:
         mid = i + (size - i) // 2
@@ -73,9 +53,9 @@ def binary_search(nums,size,t):
         if nums[mid] < t: i = mid+1
         else: size = mid - 1
 
-
 def method3(nums,t):            # using binary search
     if nums[0] > t: return 0
+
     size = len(nums)
     if nums[-1] < t: return size
 
@@ -85,17 +65,12 @@ def method3(nums,t):            # using binary search
 
         for i in range(size-1,-1,-1):
             if nums[i] < t: return i+1
-            # print("i:",i,"len(nums)-i-1:",len(nums)-i-1)
 
     if t == 0: return 0
 
-    # print("\n1:",nums)
-
     if size > t:
-        # print(nums[t])
         if nums[t] == t: return t
         nums = nums[:t]
-    # print("\n2:",nums)
 
     size = len(nums)
     if t in nums:
@@ -103,7 +78,6 @@ def method3(nums,t):            # using binary search
 
     for i in range(size-1,-1,-1):
         if nums[i] < t: return i+1
-        # print("i:",i,"len(nums)-i-1:",len(nums)-i-1)
 
 
 

@@ -1,9 +1,7 @@
 def method1(ht):            # correct but Time Limit Exceed
     v = len(ht) - 1
     if v==0: return ht[0]
-    # if v==1: return min(ht)
 
-    # print(ht)
     area = []
     while v>0:
         if ht[0] < ht[-1]:
@@ -13,9 +11,6 @@ def method1(ht):            # correct but Time Limit Exceed
             area += [ht[-1] * v]
             ht = ht[:v]
         v-=1
-        # print("\nv:",v)
-        # print("ht:",ht)
-        # print("area:",area)
 
     return max(area)
 
@@ -24,26 +19,17 @@ def method2(ht):        # very poor TC & SC
     v = len(ht) - 1
     if v==0: return ht[0]
 
-    # print(ht)
     u=0
-    # area = []
     area = 0
 
-    # while v>1:
     while u < v:
         if ht[u] < ht[v]:
-            # area += [ht[u] * (v-u)]
             area = max(area,(ht[u] * (v-u)))
             u+=1
         else:
-            # area += [ht[v] * (v-u)]
             area = max(area,(ht[v] * (v-u)))
             v-=1
 
-        # print("\nu:",u,"v:",v)
-        # print("area:",area)
-
-    # return max(area)
     return area
 
 
@@ -51,21 +37,16 @@ def method3(ht):        # even worse than method2
     v = len(ht) - 1
     if v==0: return ht[0]
 
-    # print(ht)
     u=0
     area = 0
     x=0
 
     while u < v:
         x = min(ht[u],ht[v]) * (v-u)
-        # print("\nx:",x)
         area = max(area,x)
 
         if ht[u] < ht[v]: u+=1
         else: v-=1
-    
-        # print("u:",u,"v:",v)
-        # print("area:",area)
         
     return area
 
