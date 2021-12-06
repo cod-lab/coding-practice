@@ -1,5 +1,11 @@
 .history
 .vscode
-*.jpg
-*.png
-
+# *.jpg
+# *.png
+*.exe
+*.ini
+*.class
+*.txt
+# *.gif
+!others.txt
+java
