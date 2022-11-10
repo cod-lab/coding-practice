@@ -7,5 +7,5 @@
 *.class
 # *.txt
 # *.gif
-!others.txt
+# !others.txt
 java
