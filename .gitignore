@@ -5,7 +5,7 @@
 *.exe
 *.ini
 *.class
-*.txt
+# *.txt
 # *.gif
 !others.txt
 java

@@ -1,0 +1,24 @@
+gfg ->
+ds - topic wise (50 each), more on array and string
+algos - topics (50 each), more on dp
+
+interview exp. of candidates of multiple companies - 50 interview exp. of each company u want desire to work in
+
+puzzles (200 ques)
+
+language concepts - oops concepts mostly
+
+os, dbms theory
+
+project ideas 
+
+quiz - math, dsa, language aptitude; reasoning, data interpretation, analytical
+
+
+codechef - real life
+codeforces - dsa
+leetcode - dsa
+
+
+dsa - gfg or leetcode or codeforces
+real life - codechef

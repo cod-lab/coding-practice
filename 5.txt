@@ -1,0 +1,14 @@
+https://practice.geeksforgeeks.org/explore/?category%5B%5D=Arrays&problemType=functional&difficulty%5B%5D=0&page=1&sortBy=submissions&category%5B%5D=Arrays
+https://www.geeksforgeeks.org/company-interview-corner/
+https://www.codechef.com/certification/data-structures-and-algorithms/prepare
+https://www.geeksforgeeks.org/python-iterate-multiple-lists-simultaneously/
+https://www.saltycrane.com/blog/2008/04/how-to-use-pythons-enumerate-and-zip-to/
+https://www.google.com/search?q=cap&oq=cap&aqs=chrome..69i57.1042j0j1&sourceid=chrome&ie=UTF-8
+
+ 
+https://www.google.com/search?q=def+return+type+function+in+python&oq=def+return+type+function+in+python&aqs=chrome..69i57.13597j0j1&sourceid=chrome&ie=UTF-8
+https://docs.python.org/3/library/typing.html
+https://docs.python.org/3/library/typing.html
+https://www.google.com/search?q=%27type%27+object+is+not+subscriptable&oq=%27type%27+object+is+not+subscriptable&aqs=chrome..69i57.163j0j1&sourceid=chrome&ie=UTF-8
+
+
